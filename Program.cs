@@ -13,9 +13,9 @@ namespace C__Project
             name = Console.ReadLine();
             Console.WriteLine("What's up, " + name );
             string answer;
-            Console.WriteLine("Want to see a cool math problem " + name + "?");
+            Console.WriteLine("Want to see what I can do, " + name + "?");
             answer = Console.ReadLine();
-            Console.WriteLine(answer + "? Ok.");
+            Console.WriteLine(answer + "? Ok. You will enter 2 numbers and I will check to see if they are equal.");
             Console.WriteLine("Enter first number.");
             string num1;
             num1 = Console.ReadLine();
@@ -25,9 +25,12 @@ namespace C__Project
             Console.WriteLine("Good. Performing calculation...");
             var int1 = int.Parse(num1);
             var int2 = int.Parse(num2);
-            int num3;
-            num3 = int1 + int2;
-            Console.WriteLine(int1.ToString() + "+" + int2.ToString() + "=" + num3.ToString());
+            if (int1 == int2) {
+            Console.WriteLine("Yes, the values are equal.");
+            }
+            else {
+            Console.WriteLine("Sadly, the values are not equal.");
+            }
 
         }
     }
