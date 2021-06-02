@@ -1,0 +1,15 @@
+/Users/jacob.moore/C# Project/bin/Debug/net5.0/C# Project.deps.json
+/Users/jacob.moore/C# Project/bin/Debug/net5.0/C# Project.runtimeconfig.json
+/Users/jacob.moore/C# Project/bin/Debug/net5.0/C# Project.runtimeconfig.dev.json
+/Users/jacob.moore/C# Project/bin/Debug/net5.0/C# Project.dll
+/Users/jacob.moore/C# Project/bin/Debug/net5.0/ref/C# Project.dll
+/Users/jacob.moore/C# Project/bin/Debug/net5.0/C# Project.pdb
+/Users/jacob.moore/C# Project/obj/Debug/net5.0/C# Project.csproj.AssemblyReference.cache
+/Users/jacob.moore/C# Project/obj/Debug/net5.0/C# Project.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jacob.moore/C# Project/obj/Debug/net5.0/C# Project.AssemblyInfoInputs.cache
+/Users/jacob.moore/C# Project/obj/Debug/net5.0/C# Project.AssemblyInfo.cs
+/Users/jacob.moore/C# Project/obj/Debug/net5.0/C# Project.csproj.CoreCompileInputs.cache
+/Users/jacob.moore/C# Project/obj/Debug/net5.0/C# Project.dll
+/Users/jacob.moore/C# Project/obj/Debug/net5.0/ref/C# Project.dll
+/Users/jacob.moore/C# Project/obj/Debug/net5.0/C# Project.pdb
+/Users/jacob.moore/C# Project/obj/Debug/net5.0/C# Project.genruntimeconfig.cache
