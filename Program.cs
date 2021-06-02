@@ -16,13 +16,18 @@ namespace C__Project
             Console.WriteLine("Want to see a cool math problem " + name + "?");
             answer = Console.ReadLine();
             Console.WriteLine(answer + "? Ok.");
-            int num1 = 12;
-            int num2 = 14;
+            Console.WriteLine("Enter first number.");
+            string num1;
+            num1 = Console.ReadLine();
+            Console.WriteLine("Good. What is your second number?");
+            string num2;
+            num2 = Console.ReadLine();
+            Console.WriteLine("Good. Performing calculation...");
+            var int1 = int.Parse(num1);
+            var int2 = int.Parse(num2);
             int num3;
-
-            num3 = num1 + num2;
-
-            Console.WriteLine(num3);
+            num3 = int1 + int2;
+            Console.WriteLine(int1.ToString() + "+" + int2.ToString() + "=" + num3.ToString());
 
         }
     }
