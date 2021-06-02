@@ -8,12 +8,8 @@ namespace C__Project
     {
         public static async Task Main()
     {
-        string text =
-            "This is a test, " +
-            "hopefully it works. ";
-
-        await File.WriteAllTextAsync("TextFileTest1.txt", text);
-        Console.WriteLine("File writing: Completed.");
+        using StreamWriter file = new("TextFileTest1.txt", append: true);
+        await file.WriteLineAsync("\nNew Line.");
     }
     }
 }
