@@ -8,8 +8,12 @@ namespace C__Project
     {
         public static async Task Main()
     {
+        string input;
+        Console.WriteLine("Please enter what you want added to the file.");
+        input = Console.ReadLine();
+        Console.WriteLine("Inputting now...");
         using StreamWriter file = new("TextFileTest1.txt", append: true);
-        await file.WriteLineAsync("\nNew Line.");
+        await file.WriteLineAsync("\n" + input);
     }
     }
 }
