@@ -13,7 +13,7 @@ namespace C__Project
             name = Console.ReadLine();
             Console.WriteLine("What's up, " + name );
             string answer;
-            Console.WriteLine("Want to see a school math problem " + name + "?");
+            Console.WriteLine("Want to see a cool math problem " + name + "?");
             answer = Console.ReadLine();
             Console.WriteLine(answer + "? Ok.");
             int num1 = 12;
