@@ -6,14 +6,11 @@ namespace C__Project
 {
     class Program
     {
-        public static async Task Main()
+        static void Main()
     {
-        string input;
-        Console.WriteLine("Please enter what you want added to the file.");
-        input = Console.ReadLine();
-        Console.WriteLine("Inputting now...");
-        using StreamWriter file = new("TextFileTest1.txt", append: true);
-        await file.WriteLineAsync("\n" + input);
+        
+        string text = System.IO.File.ReadAllText(@"TextFileTest1.txt");
+        System.Console.WriteLine("\nContents of TextFileTest1.txt : {0}", "\n\n" + text);
     }
     }
 }
