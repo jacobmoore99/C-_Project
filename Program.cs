@@ -1,16 +1,33 @@
 ﻿using System;
-using System.IO;
-using System.Threading.Tasks;
 
 namespace C__Project
 {
     class Program
     {
-        static void Main()
+      enum Months
     {
-        
-        string text = System.IO.File.ReadAllText(@"TextFileTest1.txt");
-        System.Console.WriteLine("\nContents of TextFileTest1.txt : {0}", "\n\n" + text);
+      None,
+      January,    // 1
+      February,   // 2
+      March,      // 3
+      April,      // 4
+      May,        // 5
+      June,       // 6
+      July,        // 7
+      August,
+      September,
+      October,
+      November,
+      December
+    }
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Enter number from 1-12.");
+      string mnum;
+      mnum = Console.ReadLine();
+      var int1 = int.Parse(mnum);
+      var output = (Months)int1;
+      Console.WriteLine(output);
     }
     }
 }
