@@ -1,33 +1,29 @@
 ﻿using System;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace C__Project
 {
     class Program
     {
-      enum Months
+        static void Main()
     {
-      None,
-      January,    // 1
-      February,   // 2
-      March,      // 3
-      April,      // 4
-      May,        // 5
-      June,       // 6
-      July,        // 7
-      August,
-      September,
-      October,
-      November,
-      December
-    }
-    static void Main(string[] args)
-    {
-      Console.WriteLine("Enter number from 1-12.");
-      string mnum;
-      mnum = Console.ReadLine();
-      var int1 = int.Parse(mnum);
-      var output = (Months)int1;
-      Console.WriteLine(output);
+        int counter = 0;  
+        string line;  
+        System.Console.WriteLine("\n");
+        // Read the file and display it line by line.  
+        System.IO.StreamReader file =
+            new System.IO.StreamReader(@"TextFileTest1.txt");  
+        while((line = file.ReadLine()) != null)  
+        {  
+            System.Console.WriteLine(line);  
+            counter++;  
+        }  
+          
+        file.Close();  
+        System.Console.WriteLine("There were {0} lines in this text file.", counter);  
+        // Suspend the screen.  
+        System.Console.ReadLine();  
     }
     }
 }
