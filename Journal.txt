@@ -1,0 +1,16 @@
+Journal.
+
+Entry Date - Saturday, June 5:
+This is the first entry in this jounral. It is being written as a test.
+
+Entry Date - Saturday, June 5:
+This is just a second test entry.
+
+Entry Date - Saturday, June 5:
+This is a great day. The program is working.
+
+Entry Date - Saturday, June 5:
+This is the final test of the journal.
+
+Entry Date - Saturday, June 5:
+Done.

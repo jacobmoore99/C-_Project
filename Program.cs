@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace C__Project
 {
@@ -33,33 +35,47 @@ namespace C__Project
       Sunday       // 7
       
     }
-    static void Main(string[] args)
+    public static async Task Main()
     {
-      Random rnd = new Random();
-      int day  = rnd.Next(1, 8);  // creates a number between 1 and 12
-      int month   = rnd.Next(1, 13);   // creates a number between 1 and 6
-      int date   = rnd.Next(1, 32);     // creates a number between 0 and 51
-
-      Console.WriteLine("\nYour numerical calendar date is: " + day.ToString() + ", " + month.ToString() + " " + date.ToString());
-      Console.WriteLine("Use this program to perform a conversion.");
+      Console.WriteLine("You will enter today's date.");
       
-      Console.WriteLine("\nEnter the first number from 1-7.");
+      Console.WriteLine("\nEnter the day number of the week. Monday is 1 and Sunday is 7.");
       string dnum;
       dnum = Console.ReadLine();
       var intd = int.Parse(dnum);
 
-      Console.WriteLine("\nEnter the first number from 1-12.");
+      Console.WriteLine("\nEnter the month number. January is 1 and December is 12.");
       string mnum;
       mnum = Console.ReadLine();
       var intm = int.Parse(mnum);
 
-      Console.WriteLine("\nEnter the first number from 1-31.");
+      Console.WriteLine("\nEnter the date number. 1st is 1 and 31st is 31.");
       string tnum;
       tnum = Console.ReadLine();
 
       var doutput = (Days)intd;
       var moutput = (Months)intm;
-      Console.WriteLine("\nThe date is: " + doutput + ", " + moutput + " " + tnum + ".\n");
+      var calendar = ("\nEntry Date - " + doutput + ", " + moutput + " " + tnum + ":\n");
+      string input;
+      Console.WriteLine("\nDate recorded. Please write journal entry.");
+
+      input = Console.ReadLine();
+      Console.WriteLine("Inputting now...");
+      using StreamWriter file = new("Journal.txt", append: true);
+      await file.WriteLineAsync(calendar + input);
+      
+      string entry;
+      Console.WriteLine("\nEnter 1 if you want to see the contents of the journal. If not, enter 0.");
+      entry = Console.ReadLine();
+      var ent = int.Parse(entry);
+
+        if (ent == 1) {
+            string contents = System.IO.File.ReadAllText(@"Journal.txt");
+            System.Console.WriteLine("\nContents of journal: {0}", "\n\n" + contents + calendar + input + "\n");
+            }
+            else {
+            Console.WriteLine("\nEnding program.");
+            }
     }
     }
 }
