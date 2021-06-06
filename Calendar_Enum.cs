@@ -36,9 +36,9 @@ namespace C__Project
     static void Twelfth(string[] args)
     {
       Random rnd = new Random();
-      int day  = rnd.Next(1, 8);  // creates a number between 1 and 12
-      int month   = rnd.Next(1, 13);   // creates a number between 1 and 6
-      int date   = rnd.Next(1, 32);     // creates a number between 0 and 51
+      int day  = rnd.Next(1, 8);  // creates a number between 1 and 7
+      int month   = rnd.Next(1, 13);   // creates a number between 1 and 12
+      int date   = rnd.Next(1, 32);     // creates a number between 0 and 31
 
       Console.WriteLine("\nYour numerical calendar date is: " + day.ToString() + ", " + month.ToString() + " " + date.ToString());
       Console.WriteLine("Use this program to perform a conversion.");
