@@ -20,3 +20,6 @@ This is a test entry for the GoogleSite.
 
 Entry Date - Saturday, June 5:
 Final test entry.
+
+Entry Date - Sunday, June 6:
+This is my test of the final Success Criteria of this program. Hope it goes well.
